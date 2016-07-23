@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.example.mkt.padcexercise5.components.MMTextView
+            android:id="@+id/lbl_login_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/text_white_ish"
+            android:padding="@dimen/margin_medium_2"
+            android:background="?attr/colorPrimary"
+            android:drawableRight="@drawable/ic_clear_24dp"
+            android:drawablePadding="@dimen/margin_medium"
+            />
+
+        <com.example.mkt.padcexercise5.components.MMEditText
+            android:id="@+id/et_email"
+            android:layout_width="@dimen/input_box_width"
+            android:layout_height="wrap_content"
+            android:hint="@string/msg_enter_email"
+            android:textColorHint="@color/hint_secondary_text"
+            android:textSize="@dimen/text_regular_2x"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_medium">
+
+            <requestFocus />
+
+        </com.example.mkt.padcexercise5.components.MMEditText>
+
+        <com.example.mkt.padcexercise5.components.MMEditText
+            android:id="@+id/et_password"
+            android:layout_width="@dimen/input_box_width"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_regular_2x"
+            android:hint="@string/msg_enter_password_login"
+            android:inputType="textPassword"
+            android:textColorHint="@color/hint_secondary_text"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:drawableRight="@drawable/ic_visibility_24dp"
+            android:drawablePadding="@dimen/margin_medium"
+            android:layout_below="@id/et_email"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:layout_marginRight="@dimen/margin_medium_2"
+            />
+
+        <com.example.mkt.padcexercise5.components.MMButton
+            android:id="@+id/btn_login"
+            style="@style/AccentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium_2"
+            android:text="@string/lbl_login_action" />
+
+        <com.example.mkt.padcexercise5.components.MMTextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:text="@string/msg_forgot_password"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorAccent"/>
+
+        <com.example.mkt.padcexercise5.components.MMTextView
+            android:id="@+id/tv_todo_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:text="@string/msg_to_do_register"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
